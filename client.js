@@ -10,6 +10,11 @@ request({body:{test1:i},method:"POST",url:'http://127.0.0.1:3000/server',json:tr
 		console.log("Get error:",error);
 		}
 });
+request({body:{test1:i},method:"POST",url:'http://127.0.0.1:3000/server',json:true},function(error,response,body){
+	if(error){
+		console.log("Get error:",error);
+		}
+});
 }
 
 //request.post('http://127.0.0.1:8080/server',function(error,response,body){
