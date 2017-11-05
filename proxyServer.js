@@ -13,9 +13,8 @@ if(cluster.isMaster){
 			console.log("exit",worker);
 		});
 } else {
-	http.createServer(function(req,res,next){
-	console.log("work",process.pid);
-		proxy.web(req,res,{target:'http://127.0.0.1:8080/server'});
+	http.createServer(function(req,res){
+		proxy.web(req,res,{target:'http://127.0.0.1:8080'});
 	}).listen(3000);
 	console.log("work",process.pid);
 }
