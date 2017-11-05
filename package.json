@@ -1,0 +1,27 @@
+{
+  "name": "proxyserver",
+  "version": "1.0.0",
+  "description": "proxy server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wellbeing0506/proxyServer.git"
+  },
+  "keywords": [
+    "proxy"
+  ],
+  "author": "Dave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wellbeing0506/proxyServer/issues"
+  },
+  "homepage": "https://github.com/Wellbeing0506/proxyServer#readme",
+  "dependencies": {
+    "http-proxy": "^1.16.2",
+    "request": "^2.83.0",
+    "restify": "^6.3.1"
+  }
+}
